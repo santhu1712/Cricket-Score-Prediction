@@ -1,18 +1,18 @@
 # Cricket Score Predictor 
 
-This is a machine learning-based web application built with **Flask** that predicts the final score of a cricket match based on various match-related inputs. The model uses **Linear Regression** to make predictions, and the web application allows users to input details such as the batting team, bowling team, current score, overs, wickets, and runs scored in the last 5 overs to predict the final score.
+This is a machine learning-based web application built with **Flask** that predicts the final score of a cricket match based on various match-related inputs. The model uses **Random Forest Regression** to make predictions, and the web application allows users to input details such as the batting team, bowling team, current score, overs, wickets, and runs scored in the last 5 overs to predict the final score.
 
 ## Key Features
 
-- **Machine Learning Model**: A Linear Regression model is used to predict the final score based on historical data.
-- **User Input Interface**: Users can enter details about the match, including the batting and bowling teams, current score, overs, wickets, and runs in the last 5 overs.
+- **Machine Learning Model**: A **Random Forest Regression** model is used to predict the final score based on historical data.
+- **User Input Interface**: Users can enter details about the match, including the batting and bowling teams, current score, overs, wickets, and runs scored in the last 5 overs.
 - **Web Interface**: Built with Flask for backend, HTML, and Bootstrap for frontend to provide a simple and interactive user experience.
 - **Prediction**: The model predicts the final score based on the provided match data.
 
 ## Technologies Used
 
 - **Flask**: Lightweight web framework for Python.
-- **scikit-learn**: Machine learning library used for training the Linear Regression model.
+- **scikit-learn**: Machine learning library used for training the Random Forest Regression model.
 - **pandas**: For handling and manipulating data.
 - **Pickle**: For serializing the trained machine learning model and loading it into the app.
 - **HTML/CSS**: For creating the frontend interface.
@@ -31,7 +31,7 @@ This is a machine learning-based web application built with **Flask** that predi
 - **last_five**: Runs scored by the batting team in the last 5 overs.
 
 ### Model:
-The machine learning model used in this project is a **Linear Regression** model trained to predict the final score of the batting team based on the input features mentioned above.
+The machine learning model used in this project is a **Random Forest Regression** model trained to predict the final score of the batting team based on the input features mentioned above.
 
 The trained model is saved using **Pickle** for easy loading in the Flask application.
 
@@ -75,9 +75,7 @@ After running the app, open your browser and visit `http://127.0.0.1:5000/` to i
 If you don’t have the trained model, you can train it using the following steps:
 
 1. Collect and prepare the dataset for training, ensuring it contains the match data with features like batting team, bowling team, current score, etc.
-2. Use **Linear Regression** from **scikit-learn** to train the model.
-
-
+2. Use **Random Forest Regression** from **scikit-learn** to train the model:
 
 ## How to Use the Web Application
 
@@ -94,4 +92,3 @@ After submitting the form, the app will display the predicted final score of the
 ## Contributing
 
 Contributions are welcome! Feel free to fork the repository, create a new branch, make your changes, and submit a pull request.
-
